@@ -14,57 +14,152 @@
     <title>Mischief Nation - Fashion</title>
   </head>
 
-  <body class="font-sans overscroll-none m-1 p-1">
+  <body class="font-sans overscroll-none m-1 p-1 bg-gray-100">
     <!-- Navigation -->
     <section class="container mx-auto min-w-full sticky top-2 pb-0 z-10">
-      <nav
-        class="rounded-lg flex items-center justify-between p-5 bg-gray-900 text-white"
-      >
-        <div class="text-2xl font-bold pl-8">Mischief Nation</div>
-
-        <!-- Responsive Dropdown Menu Button -->
-        <div class="lg:hidden relative">
-          <button id="menuBtn" class="text-white focus:outline-none">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-
-          <!-- Dropdown Menu -->
-          <div
-            id="dropdownMenu"
-            class="hidden absolute top-full right-0 mt-2 bg-gray-900 text-white rounded-lg shadow-lg"
+      <div class="flex flex-wrap place-items-center">
+        <section class="relative mx-auto">
+          <!-- navbar -->
+          <nav
+            class="flex justify-between bg-gray-900 text-white w-[95vw] md:w-[98vw] rounded-lg"
           >
-            <a href="index.html" class="block px-4 py-2">Home</a>
-            <a href="products.html" class="block px-4 py-2">Products</a>
-            <a href="#" class="block px-4 py-2">Roms</a>
-            <a href="#" class="block px-4 py-2">Mods</a>
+            <div class="px-4 xl:px-12 py-6 flex w-full items-center">
+              <a class="text-3xl font-bold font-heading" href="index.html">
+                <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+                Mischief Nation
+              </a>
+              <!-- Nav Links -->
+              <ul
+                class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12"
+              >
+                <li>
+                  <a class="hover:text-gray-200" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-200" href="products.html"
+                    >Products</a
+                  >
+                </li>
+                <li><a class="hover:text-gray-200" href="#">Collections</a></li>
+                <li><a class="hover:text-gray-200" href="#">Contact Us</a></li>
+              </ul>
+              <!-- Header Icons -->
+              <div class="hidden xl:flex items-center space-x-5 items-center">
+                <a class="hover:text-gray-200" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </a>
+                <a class="flex items-center hover:text-gray-200" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  <span class="flex absolute -mt-5 ml-4">
+                    <span
+                      class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"
+                    ></span>
+                    <span
+                      class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"
+                    >
+                    </span>
+                  </span>
+                </a>
+                <!-- Sign In / Register      -->
+                <a class="flex items-center hover:text-gray-200" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 hover:text-gray-200"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Responsive navbar -->
+            <a class="xl:hidden flex mr-6 items-center" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 hover:text-gray-200"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="flex absolute -mt-5 ml-4">
+                <span
+                  class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"
+                >
+                </span>
+              </span>
+            </a>
+            <div id="menuBtn" class="self-center mr-5 xl:hidden">
+              <div class="text-white focus:outline-none">
+                <svg
+                  class="h-8 w-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+            </div>
+            </div>
+            <div id="dropdownMenu"
+              class="hidden absolute top-full right-0 mt-2 bg-gray-900 text-white rounded-lg shadow-lg">
+              <a href="index.html" class="block px-4 py-2">Home</a>
+              <a href="products.html" class="block px-4 py-2">Products</a>
+              <a href="#" class="block px-4 py-2">Roms</a>
+              <a href="#" class="block px-4 py-2">Mods</a>
+            </div>
           </div>
-        </div>
-
-        <!-- Navigation Links (Hidden on Small Screens) -->
-        <div class="hidden lg:flex space-x-4 pr-8" id="navLinks">
-          <a href="index.html" class="hover:bg-gray-700 px-4 py-2 rounded"
-            >Home</a
-          >
-          <a href="products.html" class="hover:bg-gray-700 px-4 py-2 rounded"
-            >Products</a
-          >
-          <a href="#" class="hover:bg-gray-700 px-4 py-2 rounded">Roms</a>
-          <a href="#" class="hover:bg-gray-700 px-4 py-2 rounded">Mods</a>
-        </div>
-      </nav>
+          </nav>
+        </section>
+      </div>
     </section>
 
     <section class="container mx-auto mt-8 p-4">
@@ -100,47 +195,155 @@
 
       <!-- Product Grid -->
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 rounded-lg"
         id="productGrid"
       >
-        <!-- Product Cards (Replace with your product information) -->
-        <div class="rounded-lg p-4 transition duration-300 bg-gray-200">
-          <!-- Product Image -->
-          <img
-            src="https://i5.walmartimages.com/asr/b5b70845-1f31-4beb-aff0-5b9356a8bfcd_1.9378d43e76bf2a8eb80c75de4b977a6a.jpeg"
-            alt="Product 1"
-            class="bg-white w-full h-80 object-contain mb-4"
-          />
-
-          <!-- Product Details -->
-          <h3 class="text-md mb-2">Product Title 1</h3>
-          <div class="flex">
-            <div id="starRatingContainer"></div>
-            <small class="arrow-down">
-              <i class="fa-solid fa-chevron-down"></i>
-            </small>
-          </div>
-
-          <!-- View Details Button -->
-          <div class="flex tag">
-            <div>
-              <span class="price font-semibold"><sup>₹</sup>5,499</span>
-            </div>
-            <small class="">
-              <span class="a-size-base a-color-secondary">M.R.P: </span>
-              <span class="a-offscreen"><s>₹5,999</s></span>
-              <span class="font-semibold">(8% off)</span>
-            </small>
-          </div>
-
-          <!-- Repeat similar product cards for other products -->
-        </div>
       </div>
 
       <!-- Pagination -->
       <div class="mt-8 flex items-center justify-center" id="pagination"></div>
     </section>
+
+    <footer class="relative bg-gray-200 pt-8 pb-6 mt-2 rounded-lg">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap text-left lg:text-left">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold text-gray-700">
+              Let's keep in touch!
+            </h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-600">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <div class="mt-6 lg:mb-0 mb-6">
+              <button
+                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button
+                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-facebook-square"></i>
+              </button>
+              <button
+                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-dribbble"></i>
+              </button>
+              <button
+                class="bg-white text-gray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-gray-500 text-sm font-semibold mb-2"
+                  >Useful Links</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/presentation?ref=njs-profile"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      href="https://blog.creative-tim.com?ref=njs-profile"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      href="https://www.github.com/creativetimofficial?ref=njs-profile"
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
+                      >Free Products</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-gray-500 text-sm font-semibold mb-2"
+                  >Other Resources</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                      >MIT License</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/terms?ref=njs-profile"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/privacy?ref=njs-profile"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/contact-us?ref=njs-profile"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-300" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-500 font-semibold py-1">
+              Copyright © <span id="get-current-year">2024</span>
+              <a
+                href="https://www.creative-tim.com/product/notus-js"
+                class="text-gray-500 hover:text-gray-800"
+                target="_blank"
+                >Mischief Nation by</a
+              >
+              <a
+                href="https://www.creative-tim.com?ref=njs-profile"
+                class="text-gray-500 hover:text-gray-800"
+                >Siddharth</a
+              >.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="products.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

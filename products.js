@@ -1,32 +1,18 @@
-function generateStarRating(rating, container) {
-  container.innerHTML = "";
-
-  for (let i = 1; i <= 5; i++) {
-    const star = document.createElement("i");
-    star.classList.add("fas", "fa-star");
-
-    if (i <= rating) {
-      // Add a filled star
-      star.classList.add("text-yellow-500"); // You can customize the filled star color
-    } else {
-      // Add an unfilled star
-      star.classList.add("text-gray-300"); // You can customize the unfilled star color
-    }
-
-    container.appendChild(star);
-  }
-}
-
 function renderProduct(product) {
   const productGrid = document.getElementById("productGrid");
+  
+  // Create a link for the product
+  const productLink = document.createElement("a");
+  productLink.href = `details.html?id=${product.id}`; // Assuming you have a unique identifier for each product, like an 'id'
+  productLink.classList.add("transition", "duration-300", "bg-gray-200", "hover:shadow-xl");
 
   const productCard = document.createElement("div");
   productCard.classList.add(
-    "rounded-lg",
     "p-4",
     "transition",
     "duration-300",
-    "bg-gray-200"
+    "bg-gray-200",
+    "rounded-lg"
   );
 
   // Product Image
@@ -38,20 +24,28 @@ function renderProduct(product) {
     "w-full",
     "h-80",
     "object-contain",
-    "mb-4"
+    "mb-4",
+    "rounded-lg"
   );
   productCard.appendChild(productImage);
 
   // Product Details
   const productTitle = document.createElement("h3");
-  productTitle.classList.add("text-md", "mb-2");
+  productTitle.classList.add("text-md", "mb-2", "line-clamp-2");
   productTitle.textContent = product.title;
   productCard.appendChild(productTitle);
 
   // Star Rating
   const starRatingContainer = document.createElement("div");
+  const ratingArrow = document.createElement("small");
+  ratingArrow.classList.add("arrow-down")
+  ratingArrow.innerHTML = `<i class="fa-solid fa-chevron-down"></i>`
+  const ratingCount = document.createElement("small")
+  ratingCount.innerHTML = `${product.rating.count}`
   generateStarRating(product.rating.rate, starRatingContainer);
   productCard.appendChild(starRatingContainer);
+  starRatingContainer.appendChild(ratingArrow)
+  starRatingContainer.appendChild(ratingCount)
 
   // Price Details
   const priceContainer = document.createElement("div");
@@ -78,8 +72,11 @@ function renderProduct(product) {
 
   productCard.appendChild(priceContainer);
 
-  // Add the product card to the product grid
-  productGrid.appendChild(productCard);
+  // Append the product card to the link
+  productLink.appendChild(productCard);
+
+  // Add the product link to the product grid
+  productGrid.appendChild(productLink);
 }
 
 function renderPagination() {
@@ -114,10 +111,25 @@ function renderPagination() {
   paginationContainer.appendChild(nextButton);
 }
 
-// Example usage with a rating value (e.g., 3.5)
-const ratingValue = 3.5;
-const starRatingContainer = document.getElementById("starRatingContainer");
-generateStarRating(ratingValue, starRatingContainer);
+function generateStarRating(rating, container) {
+    container.innerHTML = "";
+  
+    for (let i = 1; i <= 5; i++) {
+      const star = document.createElement("i");
+      star.classList.add("fas", "fa-star");
+  
+      if (i <= rating) {
+        // Add a filled star
+        star.classList.add("text-yellow-500"); // You can customize the filled star color
+      } else {
+        // Add an unfilled star
+        star.classList.add("text-gray-300"); // You can customize the unfilled star color
+      }
+  
+      container.appendChild(star);
+    }
+  }
+  
 
 // Fetch data from the API
 axios
