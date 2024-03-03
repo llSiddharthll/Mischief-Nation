@@ -24,9 +24,6 @@ function getParameterByName(name, url) {
 // Get the 'id' parameter from the URL
 const productId = getParameterByName("id");
 
-// Now 'productId' contains the value of the 'id' parameter
-console.log("Product ID:", productId);
-
 // Use 'productId' to fetch and display product details from your data source
 axios
     .get(`https://fakestoreapi.com/products/${productId}`)
