@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Mischief Nation - Fashion</title>
+</head>
+
+<body class="font-sans overscroll-none m-1 p-1">
+    <!-- Navigation -->
+    <section class="container mx-auto min-w-full sticky top-2 pb-0 z-10">
+        <nav class="rounded-lg flex items-center justify-between p-5 bg-gray-900 text-white">
+            <div class="text-2xl font-bold pl-8">Mischief Nation</div>
+
+            <!-- Responsive Dropdown Menu Button -->
+            <div class="lg:hidden relative">
+                <button id="menuBtn" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+
+                <!-- Dropdown Menu -->
+                <div id="dropdownMenu"
+                    class="hidden absolute top-full right-0 mt-2 bg-gray-900 text-white rounded-lg shadow-lg">
+                    <a href="#" class="block px-4 py-2">Home</a>
+                    <a href="#" class="block px-4 py-2">Profile</a>
+                    <a href="#" class="block px-4 py-2">Roms</a>
+                    <a href="#" class="block px-4 py-2">Mods</a>
+                </div>
+            </div>
+
+            <!-- Navigation Links (Hidden on Small Screens) -->
+            <div class="hidden lg:flex space-x-4 pr-8" id="navLinks">
+                <a href="#" class="hover:bg-gray-700 px-4 py-2 rounded">Home</a>
+                <a href="#" class="hover:bg-gray-700 px-4 py-2 rounded">Profile</a>
+                <a href="#" class="hover:bg-gray-700 px-4 py-2 rounded">Roms</a>
+                <a href="#" class="hover:bg-gray-700 px-4 py-2 rounded">Mods</a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="container mx-auto min-w-full rounded-lg mt-2 mb-2">
+        <div class="overflow-hidden">
+            <img class="w-full h-screen rounded-lg hidden md:block" src="images/bg-img.png" alt="Fashion Banner" />
+            <img class="w-full h-full rounded-lg block md:hidden" src="images/image.png" alt="">
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="container mx-auto min-w-full rounded-lg bg-featured mb-2 mt-0">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-100 text-center pt-3">
+            Featured Products
+        </h2>
+        <div class="flex flex-col md:flex-row md:space-x-4 p-4">
+            <!-- Featured product cards go here -->
+            <div class="bg-white p-4 mt-2 md:mt-0 rounded-lg featured transition duration-300">
+                <img src="https://images.pexels.com/photos/1337477/pexels-photo-1337477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Product 1" class="w-full h-80 object-cover mb-4" />
+                <h3 class="text-lg font-semibold mb-2">Stylish Shirt</h3>
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <button class="mt-2 bg-gray-800 text-white px-4 py-2 rounded-full">
+                    View Details
+                </button>
+            </div>
+            <div class="bg-white mt-2 md:mt-0 rounded-lg p-4 featured transition duration-300">
+                <img src="https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Product 1" class="w-full h-80 object-cover mb-4" />
+                <h3 class="text-lg font-semibold mb-2">Stylish Shirt</h3>
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <button class="mt-2 bg-gray-800 text-white px-4 py-2 rounded-full">
+                    View Details
+                </button>
+            </div>
+            <div class="bg-white mt-2 md:mt-0 rounded-lg p-4 featured transition duration-300">
+                <img src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Product 1" class="w-full h-80 object-cover mb-4" />
+                <h3 class="text-lg font-semibold mb-2">Stylish Shirt</h3>
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <button class="mt-2 bg-gray-800 text-white px-4 py-2 rounded-full">
+                    View Details
+                </button>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+
+    <!-- Latest Trends Section -->
+    <section class="container mx-auto min-w-full rounded-lg bg-gray-200 mb-2 p-4">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-900 text-center pt-3">
+            Purchase These
+        </h2>
+        <div class="flex flex-col md:flex-row md:space-x-4 p-4">
+            <div id="app"
+                class="bg-white mt-4 md:mt-0 w-auto h-auto md:h-60 rounded-lg shadow-md flex flex-row card text-grey-darkest border-2 border-gray-200">
+                <img class="w-1/2 h-full rounded-l-sm" src="https://bit.ly/2EApSiC" alt="Room Image" />
+                <div class="w-full flex flex-col">
+                    <div class="p-4 pb-0 flex-1">
+                        <h3 class="font-light mb-1 text-grey-darkest">Tower Hotel</h3>
+                        <div class="text-xs flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt mr-1 text-grey-dark"></i>
+                            Soho, London
+                        </div>
+                        <span class="text-2xl md:text-5xl text-grey-darkest">£63.00<span class="text-lg">/PPPN</span></span>
+                        <div class="flex items-center mt-4">
+                            <div class="pr-2 text-xs">
+                                <i class="fas fa-wifi text-green"></i> Free WiFi
+                            </div>
+                            <div class="px-2 text-xs">
+                                <i class="text-grey-darker far fa-building"></i> 2mins to
+                                center
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-grey-lighter p-3 flex items-center justify-between transition hover:bg-grey-light">
+                        Book Now
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="app"
+                class="bg-white mt-4 md:mt-0 w-auto h-auto md:h-60 rounded-lg shadow-md flex flex-row card text-grey-darkest border-2 border-gray-200">
+                <img class="w-1/2 h-full rounded-l-sm" src="https://bit.ly/2EApSiC" alt="Room Image" />
+                <div class="w-full flex flex-col">
+                    <div class="p-4 pb-0 flex-1">
+                        <h3 class="font-light mb-1 text-grey-darkest">Tower Hotel</h3>
+                        <div class="text-xs flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt mr-1 text-grey-dark"></i>
+                            Soho, London
+                        </div>
+                        <span class="text-2xl md:text-5xl text-grey-darkest">£63.00<span class="text-lg">/PPPN</span></span>
+                        <div class="flex items-center mt-4">
+                            <div class="pr-2 text-xs">
+                                <i class="fas fa-wifi text-green"></i> Free WiFi
+                            </div>
+                            <div class="px-2 text-xs">
+                                <i class="text-grey-darker far fa-building"></i> 2mins to
+                                center
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-grey-lighter p-3 flex items-center justify-between transition hover:bg-grey-light">
+                        Book Now
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="app"
+                class="bg-white mt-4 md:mt-0 w-auto h-auto md:h-60 rounded-lg shadow-md flex flex-row card text-grey-darkest border-2 border-gray-200">
+                <img class="w-1/2 h-full rounded-l-sm" src="https://bit.ly/2EApSiC" alt="Room Image" />
+                <div class="w-full h-full flex flex-col">
+                    <div class="p-4 pb-0 flex-1">
+                        <h3 class="font-light mb-1 text-grey-darkest">Tower Hotel</h3>
+                        <div class="text-xs flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt mr-1 text-grey-dark"></i>
+                            Soho, London
+                        </div>
+                        <span class="text-2xl md:text-5xl text-grey-darkest">£63.00<span class="text-lg">/PPPN</span></span>
+                        <div class="flex items-center mt-4">
+                            <div class="pr-2 text-xs">
+                                <i class="fas fa-wifi text-green"></i> Free WiFi
+                            </div>
+                            <div class="px-2 text-xs">
+                                <i class="text-grey-darker far fa-building"></i> 2mins to
+                                center
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-grey-lighter p-3 flex items-center justify-between transition hover:bg-grey-light">
+                        Book Now
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fashion Slideshow Section -->
+    <section class="container mx-auto min-w-full mb-2 rounded-lg">
+        <swiper-container class="mySwiper z-0 rounded-lg" pagination="true" pagination-clickable="true"
+            space-between="30" effect="fade" centered-slides="true" autoplay-delay="2500"
+            autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <img src="images/pic1.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/pic2.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/pic3.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/pic4.jpg" />
+            </swiper-slide>
+        </swiper-container>
+    </section>
+    <!-- component -->
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <footer class="relative bg-blueGray-200 pt-8 pb-6 mt-2 rounded-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                        Find us on any of these platforms, we respond 1-2 business days.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button
+                            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-twitter"></i></button><button
+                            class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-facebook-square"></i></button><button
+                            class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-dribbble"></i></button><button
+                            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful
+                                Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free
+                                        Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other
+                                Resources</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT
+                                        License</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2024</span><a
+                            href="https://www.creative-tim.com/product/notus-js"
+                            class="text-blueGray-500 hover:text-gray-800" target="_blank"> Mischief Nation by
+                            <a href="https://www.creative-tim.com?ref=njs-profile"
+                                class="text-blueGray-500 hover:text-blueGray-800">Siddharth Tiwari</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        // JavaScript to toggle the visibility of the dropdown menu
+        const menuBtn = document.getElementById('menuBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        menuBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
