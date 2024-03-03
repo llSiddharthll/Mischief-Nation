@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 .bg-featured{
     background-color: black;
 }
@@ -15,4 +17,17 @@
 
 .w-128{
   width: 32rem;
+}
+.price{
+  margin-right: 1em;
+}
+.tag{
+  margin-top: 0.5em;
+}
+.tag small{
+  align-self: end;
+}
+small.arrow-down{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
