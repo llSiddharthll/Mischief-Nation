@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Mischief Nation - Fashion</title>
+  </head>
+
+  <body class="font-sans overscroll-none m-1 p-1 bg-gray-300">
+    <!-- Navigation -->
+    <section class="container mx-auto min-w-full sticky top-2 pb-0 z-10">
+      <div class="flex flex-wrap place-items-center">
+        <section class="relative mx-auto">
+          <!-- navbar -->
+          <nav
+            class="flex justify-between bg-gray-900 text-white w-[95vw] md:w-[98vw] rounded-lg"
+          >
+            <div class="px-4 xl:px-12 py-6 flex w-full items-center">
+              <a class="text-3xl font-bold font-heading" href="index.html">
+                <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+                Mischief Nation
+              </a>
+              <!-- Nav Links -->
+              <ul
+                class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12"
+              >
+                <li>
+                  <a class="hover:text-gray-200" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-200" href="products.html"
+                    >Products</a
+                  >
+                </li>
+                <li><a class="hover:text-gray-200" href="#">Collections</a></li>
+                <li><a class="hover:text-gray-200" href="#">Contact Us</a></li>
+              </ul>
+              <!-- Header Icons -->
+              <div class="hidden xl:flex items-center space-x-5 items-center">
+                <a class="hover:text-gray-200" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="flex items-center hover:text-gray-200"
+                  href="cart.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  <span class="flex absolute -mt-5 ml-4">
+                    <span
+                      class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"
+                    ></span>
+                    <span
+                      class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"
+                    >
+                    </span>
+                  </span>
+                </a>
+                <!-- Sign In / Register      -->
+                <a class="flex items-center hover:text-gray-200" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 hover:text-gray-200"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Responsive navbar -->
+            <a class="xl:hidden flex mr-6 items-center" href="cart.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 hover:text-gray-200"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="flex absolute -mt-5 ml-4">
+                <span
+                  class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"
+                >
+                </span>
+              </span>
+            </a>
+            <div id="menuBtn" class="self-center mr-5 xl:hidden">
+              <div class="text-white focus:outline-none">
+                <svg
+                  class="h-8 w-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="dropdownMenu"
+              class="hidden absolute top-full right-0 mt-2 bg-gray-900 text-white rounded-lg shadow-lg"
+            >
+              <a href="index.html" class="block px-4 py-2">Home</a>
+              <a href="products.html" class="block px-4 py-2">Products</a>
+              <a href="#" class="block px-4 py-2">Roms</a>
+              <a href="#" class="block px-4 py-2">Mods</a>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </section>
+
+    <section class="cart">
+        <!-- Cart Page Structure -->
+        <div class="container mx-auto mb-8 overflow-hidden">
+            <div class="flex my-2 shadow-lg rounded-md bg-white">
+                <!-- Cart Items -->
+                <div class="w-3/4 px-10 py-10">
+                    <div class="flex justify-between border-b pb-8 items-center">
+                        <h1 class="font-bold text-3xl text-gray-800">Your Cart</h1>
+                        <h2 class="font-semibold text-lg text-gray-600">4 Items</h2>
+                    </div>
+                    <!-- Cart Item -->
+                    <div class="h-[64vh] overflow-auto">
+                    <div class="flex items-center justify-between mt-8 border-b pb-4">
+                        <div class="flex items-center space-x-4">
+                            <!-- Product Image -->
+                            <div class="w-16 h-16 bg-white border-2 border-gray-300 rounded-md overflow-hidden">
+                                <img src="https://th.bing.com/th/id/OIP.Ph3hnb8LwdjJr6fTQET2vwHaJ2?w=156&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product" class="object-contain w-full h-full">
+                            </div>
+                            <!-- Product Details -->
+                            <div>
+                                <h2 class="text-xl font-semibold text-gray-800">Product Name</h2>
+                                <p class="text-gray-500">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quantity and Remove Button -->
+                        <div class="flex items-center space-x-4">
+                            <input type="number" value="1" min="1" class="w-16 px-2 py-1 border border-gray-300 rounded-md text-gray-800 focus:outline-none">
+                            <button class="text-red-500 hover:text-red-600 focus:outline-none">Remove</button>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mt-8 border-b pb-4">
+                        <div class="flex items-center space-x-4">
+                            <!-- Product Image -->
+                            <div class="w-16 h-16 bg-white border-2 border-gray-300 rounded-md overflow-hidden">
+                                <img src="https://th.bing.com/th/id/OIP.Ph3hnb8LwdjJr6fTQET2vwHaJ2?w=156&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product" class="object-contain w-full h-full">
+                            </div>
+                            <!-- Product Details -->
+                            <div>
+                                <h2 class="text-xl font-semibold text-gray-800">Product Name</h2>
+                                <p class="text-gray-500">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quantity and Remove Button -->
+                        <div class="flex items-center space-x-4">
+                            <input type="number" value="1" min="1" class="w-16 px-2 py-1 border border-gray-300 rounded-md text-gray-800 focus:outline-none">
+                            <button class="text-red-500 hover:text-red-600 focus:outline-none">Remove</button>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mt-8 border-b pb-4">
+                        <div class="flex items-center space-x-4">
+                            <!-- Product Image -->
+                            <div class="w-16 h-16 bg-white border-2 border-gray-300 rounded-md overflow-hidden">
+                                <img src="https://th.bing.com/th/id/OIP.Ph3hnb8LwdjJr6fTQET2vwHaJ2?w=156&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product" class="object-contain w-full h-full">
+                            </div>
+                            <!-- Product Details -->
+                            <div>
+                                <h2 class="text-xl font-semibold text-gray-800">Product Name</h2>
+                                <p class="text-gray-500">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quantity and Remove Button -->
+                        <div class="flex items-center space-x-4">
+                            <input type="number" value="1" min="1" class="w-16 px-2 py-1 border border-gray-300 rounded-md text-gray-800 focus:outline-none">
+                            <button class="text-red-500 hover:text-red-600 focus:outline-none">Remove</button>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mt-8 border-b pb-4">
+                        <div class="flex items-center space-x-4">
+                            <!-- Product Image -->
+                            <div class="w-16 h-16 bg-white border-2 border-gray-300 rounded-md overflow-hidden">
+                                <img src="https://th.bing.com/th/id/OIP.Ph3hnb8LwdjJr6fTQET2vwHaJ2?w=156&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product" class="object-contain w-full h-full">
+                            </div>
+                            <!-- Product Details -->
+                            <div>
+                                <h2 class="text-xl font-semibold text-gray-800">Product Name</h2>
+                                <p class="text-gray-500">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quantity and Remove Button -->
+                        <div class="flex items-center space-x-4">
+                            <input type="number" value="1" min="1" class="w-16 px-2 py-1 border border-gray-300 rounded-md text-gray-800 focus:outline-none">
+                            <button class="text-red-500 hover:text-red-600 focus:outline-none">Remove</button>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mt-8 border-b pb-4">
+                        <div class="flex items-center space-x-4">
+                            <!-- Product Image -->
+                            <div class="w-16 h-16 bg-white border-2 border-gray-300 rounded-md overflow-hidden">
+                                <img src="https://th.bing.com/th/id/OIP.Ph3hnb8LwdjJr6fTQET2vwHaJ2?w=156&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product" class="object-contain w-full h-full">
+                            </div>
+                            <!-- Product Details -->
+                            <div>
+                                <h2 class="text-xl font-semibold text-gray-800">Product Name</h2>
+                                <p class="text-gray-500">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quantity and Remove Button -->
+                        <div class="flex items-center space-x-4">
+                            <input type="number" value="1" min="1" class="w-16 px-2 py-1 border border-gray-300 rounded-md text-gray-800 focus:outline-none">
+                            <button class="text-red-500 hover:text-red-600 focus:outline-none">Remove</button>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mt-8 border-b pb-4">
+                        <div class="flex items-center space-x-4">
+                            <!-- Product Image -->
+                            <div class="w-16 h-16 bg-white border-2 border-gray-300 rounded-md overflow-hidden">
+                                <img src="https://th.bing.com/th/id/OIP.Ph3hnb8LwdjJr6fTQET2vwHaJ2?w=156&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product" class="object-contain w-full h-full">
+                            </div>
+                            <!-- Product Details -->
+                            <div>
+                                <h2 class="text-xl font-semibold text-gray-800">Product Name</h2>
+                                <p class="text-gray-500">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quantity and Remove Button -->
+                        <div class="flex items-center space-x-4">
+                            <input type="number" value="1" min="1" class="w-16 px-2 py-1 border border-gray-300 rounded-md text-gray-800 focus:outline-none">
+                            <button class="text-red-500 hover:text-red-600 focus:outline-none">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Repeat similar cart items for other products -->
+                </div>
+    
+                <!-- Cart Summary -->
+                <div class="w-1/4 px-8 py-10 bg-indigo-600 text-white">
+                    <h1 class="font-bold text-3xl pb-6">Order Summary</h1>
+                    <!-- Summary Details -->
+                    <div class="flex justify-between mt-6">
+                        <span class="text-gray-300">Subtotal</span>
+                        <span class="font-bold text-lg">₹300.00</span>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <span class="text-gray-300">Shipping</span>
+                        <span class="font-bold text-lg">₹20.00</span>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <span class="text-gray-300">Total</span>
+                        <span class="font-bold text-lg">₹320.00</span>
+                    </div>
+                    <!-- Checkout Button -->
+                    <button class="mt-8 bg-white text-indigo-600 px-6 py-2 rounded-md hover:bg-gray-100 focus:outline-none">
+                        Proceed to Checkout
+                    </button>
+                </div>
+                <!-- End Cart Summary -->
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer class="relative bg-gray-200 pt-8 pb-6 mt-2 rounded-lg">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap text-left lg:text-left">
+            <div class="w-full lg:w-6/12 px-4">
+              <h4 class="text-3xl font-semibold text-gray-700">
+                Let's keep in touch!
+              </h4>
+              <h5 class="text-lg mt-0 mb-2 text-gray-600">
+                Find us on any of these platforms, we respond 1-2 business days.
+              </h5>
+              <div class="mt-6 lg:mb-0 mb-6">
+                <button
+                  class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <button
+                  class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i class="fab fa-facebook-square"></i>
+                </button>
+                <button
+                  class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i class="fab fa-dribbble"></i>
+                </button>
+                <button
+                  class="bg-white text-gray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 px-4">
+              <div class="flex flex-wrap items-top mb-6">
+                <div class="w-full lg:w-4/12 px-4 ml-auto">
+                  <span
+                    class="block uppercase text-gray-500 text-sm font-semibold mb-2"
+                    >Useful Links</span
+                  >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a
+                        class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/presentation?ref=njs-profile"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                        href="https://blog.creative-tim.com?ref=njs-profile"
+                        >Blog</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                        href="https://www.github.com/creativetimofficial?ref=njs-profile"
+                        >Github</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
+                        >Free Products</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-full lg:w-4/12 px-4">
+                  <span
+                    class="block uppercase text-gray-500 text-sm font-semibold mb-2"
+                    >Other Resources</span
+                  >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a
+                        class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                        >MIT License</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                        href="https://creative-tim.com/terms?ref=njs-profile"
+                        >Terms &amp; Conditions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                        href="https://creative-tim.com/privacy?ref=njs-profile"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                        href="https://creative-tim.com/contact-us?ref=njs-profile"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-gray-300" />
+          <div
+            class="flex flex-wrap items-center md:justify-between justify-center"
+          >
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+              <div class="text-sm text-gray-500 font-semibold py-1">
+                Copyright © <span id="get-current-year">2024</span>
+                <a
+                  href="https://www.creative-tim.com/product/notus-js"
+                  class="text-gray-500 hover:text-gray-800"
+                  target="_blank"
+                  >Mischief Nation by</a
+                >
+                <a
+                  href="https://www.creative-tim.com?ref=njs-profile"
+                  class="text-gray-500 hover:text-gray-800"
+                  >Siddharth</a
+                >.
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+  </body>
+</html>
