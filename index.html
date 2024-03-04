@@ -11,41 +11,54 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Snippet&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Snippet&display=swap"
+      rel="stylesheet"
+    />
     <title>Mischief Nation - Fashion</title>
   </head>
 
-  <body class="font-sans overscroll-none m-1 p-1">
+  <body class="m-1 p-1 bg-[var(--background)]">
     <!-- Navigation -->
-    <section class="container mx-auto min-w-full sticky top-2 pb-0 z-10">
+    <section class="container mx-auto min-w-full sticky top-2 pb-0 z-40">
       <div class="flex flex-wrap place-items-center">
         <section class="relative mx-auto">
           <!-- navbar -->
           <nav
-            class="flex justify-between bg-gray-900 text-white w-[95vw] md:w-[98vw] rounded-lg"
+            class="flex justify-between bg-[var(--secondary)] text-[var(--text)] w-[95vw] md:w-[98vw] rounded-lg"
           >
-            <div class="px-4 xl:px-12 py-6 flex w-full items-center">
-              <a class="text-3xl font-bold font-heading" href="index.html">
-                <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+            <div class="px-4 xl:px-12 py-2 flex w-full items-center">
+              <a
+                class="flex items-center text-3xl font-semibold font-['Gluten'] font-heading"
+                href="index.html"
+              >
+                <img class="h-20" src="images/logo.png" alt="logo">
                 Mischief Nation
               </a>
               <!-- Nav Links -->
               <ul
-                class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12"
+                class="hidden md:flex px-4 mx-auto font-semibold font-['Snippet'] font-heading space-x-12"
               >
                 <li>
-                  <a class="hover:text-gray-200" href="index.html">Home</a>
+                  <a class="hover:text-[var(--background)]" href="index.html">Home</a>
                 </li>
                 <li>
-                  <a class="hover:text-gray-200" href="products.html"
+                  <a class="hover:text-[var(--background)]" href="products.html"
                     >Products</a
                   >
                 </li>
-                <li><a class="hover:text-gray-200" href="#">Collections</a></li>
-                <li><a class="hover:text-gray-200" href="#">Contact Us</a></li>
+                <li><a class="hover:text-[var(--background)]" href="#">Collections</a></li>
+                <li><a class="hover:text-[var(--background)]" href="#">Contact Us</a></li>
               </ul>
               <!-- Header Icons -->
               <div class="hidden xl:flex items-center space-x-5 items-center">
-                <a class="hover:text-gray-200" href="#">
+                <a class="hover:text-[var(--background)]" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-6 w-6"
@@ -61,7 +74,10 @@
                     />
                   </svg>
                 </a>
-                <a class="flex items-center hover:text-gray-200" href="cart.html">
+                <a
+                  class="flex items-center hover:text-[var(--background)]"
+                  href="cart.html"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-6 w-6"
@@ -87,10 +103,10 @@
                   </span>
                 </a>
                 <!-- Sign In / Register-->
-                <a class="flex items-center hover:text-gray-200" href="#">
+                <a class="flex items-center hover:text-[var(--background)]" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 hover:text-gray-200"
+                    class="h-6 w-6 hover:text-[var(--background)]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -110,7 +126,7 @@
             <a class="xl:hidden flex mr-6 items-center" href="cart.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 hover:text-gray-200"
+                class="h-6 w-6 hover:text-[var(--background)]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -133,7 +149,7 @@
               </span>
             </a>
             <div id="menuBtn" class="self-center mr-5 xl:hidden">
-              <div class="text-white focus:outline-none">
+              <div class="text-[var(--text)] focus:outline-none">
                 <svg
                   class="h-8 w-8"
                   fill="none"
@@ -152,7 +168,7 @@
             </div>
             <div
               id="dropdownMenu"
-              class="hidden absolute top-full right-0 mt-2 bg-gray-900 text-white rounded-lg shadow-lg"
+              class="hidden absolute top-full right-0 mt-2 bg-[var(--secondary)] text-[var(--text)] rounded-lg shadow-lg"
             >
               <a href="index.html" class="block px-4 py-2">Home</a>
               <a href="products.html" class="block px-4 py-2">Products</a>
@@ -165,24 +181,24 @@
     </section>
 
     <!-- Banner Section -->
-    <section class="container mx-auto min-w-full rounded-lg mt-2 mb-2">
-      <div class="overflow-hidden">
-        <img
-          class="w-full h-screen rounded-lg hidden md:block"
-          src="images/bg-img.png"
-          alt="Fashion Banner"
-        />
-        <img
-          class="w-full h-full rounded-lg block md:hidden"
-          src="images/image.png"
-          alt=""
-        />
-      </div>
-    </section>
+    <section class="container mx-auto min-w-full rounded-lg mt-2 mb-2 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-[var(--background)] text-center py-20 shadow-xl relative overflow-hidden">
+        <img src="images/Designer.png" alt="Fashion Image" class="absolute top-0 left-0 w-full h-full object-cover opacity-30 z-0" />
+        <div class="flex flex-col items-center justify-center h-full space-y-4 relative z-10">
+          <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight uppercase leading-tight text-shadow">Elevate Your Style with</h1>
+          <h2 class="text-6xl md:text-7xl font-extrabold tracking-tight uppercase leading-tight text-shadow">Mischief Nation</h2>
+          <p class="text-lg md:text-xl mt-4 font-light leading-relaxed max-w-md mx-auto">
+            Explore a realm of exquisite fashion where each piece is a masterpiece. <span class="font-bold">Mischief Nation</span> invites you to embrace unparalleled comfort and style with our curated collection of custom T-shirts and Hoodies designed for your unique personality.
+          </p>
+          <a href="products.html" class="mt-8 inline-block bg-[var(--accent)] text-[var(--text)] px-10 py-4 rounded-full hover:bg-opacity-90 transition duration-300 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+            Explore Collection
+          </a>
+        </div>
+      </section>
+      
 
     <!-- Featured Products Section -->
     <section
-      class="container mx-auto min-w-full rounded-lg bg-featured mb-2 mt-0"
+      class="container mx-auto min-w-full rounded-lg bg-[var(--secondary)] mb-2 mt-0"
     >
       <h2 class="text-3xl font-semibold mb-4 text-gray-100 text-center pt-3">
         Featured Products
@@ -190,7 +206,7 @@
       <div class="flex flex-col md:flex-row md:space-x-4 p-4">
         <!-- Featured product cards go here -->
         <div
-          class="bg-white p-4 mt-2 md:mt-0 rounded-lg featured transition duration-300"
+          class="bg-[var(--background)] p-4 mt-2 md:mt-0 rounded-lg featured transition duration-300"
         >
           <img
             src="https://images.pexels.com/photos/1337477/pexels-photo-1337477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -201,12 +217,12 @@
           <p class="text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <button class="mt-2 bg-gray-800 text-white px-4 py-2 rounded-full">
+          <button class="mt-2 bg-[var(--primary)] text-[var(--text)] hover:bg-[var(--accent)] font-semibold px-4 py-2 rounded-full">
             View Details
           </button>
         </div>
         <div
-          class="bg-white mt-2 md:mt-0 rounded-lg p-4 featured transition duration-300"
+          class="bg-[var(--background)] mt-2 md:mt-0 rounded-lg p-4 featured transition duration-300"
         >
           <img
             src="https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -217,12 +233,12 @@
           <p class="text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <button class="mt-2 bg-gray-800 text-white px-4 py-2 rounded-full">
+          <button class="mt-2 bg-[var(--primary)] text-[var(--text)] hover:bg-[var(--accent)] font-semibold px-4 py-2 rounded-full">
             View Details
           </button>
         </div>
         <div
-          class="bg-white mt-2 md:mt-0 rounded-lg p-4 featured transition duration-300"
+          class="bg-[var(--background)] mt-2 md:mt-0 rounded-lg p-4 featured transition duration-300"
         >
           <img
             src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -233,7 +249,7 @@
           <p class="text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <button class="mt-2 bg-gray-800 text-white px-4 py-2 rounded-full">
+          <button class="mt-2 bg-[var(--primary)] text-[var(--text)] hover:bg-[var(--accent)] font-semibold px-4 py-2 rounded-full">
             View Details
           </button>
         </div>
@@ -243,7 +259,7 @@
 
     <!-- Latest Trends Section -->
     <section
-      class="container mx-auto min-w-full rounded-lg bg-gray-200 mb-2 p-4"
+      class="container mx-auto min-w-full rounded-lg bg-[var(--secondary)] mb-2 p-4"
     >
       <h2 class="text-3xl font-semibold mb-4 text-gray-900 text-center pt-3">
         Purchase These

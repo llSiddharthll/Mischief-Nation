@@ -1,36 +1,50 @@
-html{
-  scroll-behavior: smooth;
-}
-.bg-featured{
-    background-color: black;
-}
-.featured:hover{
-    box-shadow: 0 1px 10px white;
-}
-.transition{
-    transition: all .2s ease-out;
+:root {
+  --text: #031411;
+  --background: #eefcfa;
+  --primary: #38ddc6;
+  --secondary: #86beeb;
+  --accent: #62a0e5;
 }
 
-.h-60{
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+  font-family: "Snippet", sans-serif;
+}
+
+p {
+  font-family: monospace;
+}
+.bg-featured {
+  background-color: black;
+}
+.transition {
+  transition: all 0.2s ease-out;
+}
+
+.h-60 {
   height: 14rem;
 }
 
-.w-128{
+.w-128 {
   width: 32rem;
 }
-.price{
+.price {
   margin-right: 1em;
 }
-.tag{
+.tag {
   margin-top: 0.5em;
 }
-.tag small{
+.tag small {
   align-self: end;
 }
-small.arrow-down{
+small.arrow-down {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-.cart ::-webkit-scrollbar{
+.cart ::-webkit-scrollbar {
   width: 5px;
 }
