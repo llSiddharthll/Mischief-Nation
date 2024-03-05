@@ -25,6 +25,7 @@
   </head>
 
   <body class="m-1 p-1 bg-[var(--background)]">
+
     <!-- Navigation -->
     <section class="container mx-auto min-w-full sticky top-2 pb-0 z-40">
       <div class="flex flex-wrap place-items-center">
@@ -39,7 +40,7 @@
                 href="index.html"
               >
                 <img class="h-20" src="images/logo.png" alt="logo">
-                Mischief Nation
+                <span class="hidden md:block">Mischief Nation</span>
               </a>
               <!-- Nav Links -->
               <ul
@@ -94,16 +95,16 @@
                   </svg>
                   <span class="flex absolute -mt-5 ml-4">
                     <span
-                      class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"
+                      class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-[var(--accent)] opacity-75"
                     ></span>
                     <span
-                      class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"
+                      class="relative inline-flex rounded-full h-3 w-3 bg-[var(--primary)]"
                     >
                     </span>
                   </span>
                 </a>
                 <!-- Sign In / Register-->
-                <a class="flex items-center hover:text-[var(--background)]" href="#">
+                <a class="flex items-center hover:text-[var(--background)]" href="login.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-6 w-6 hover:text-[var(--background)]"
@@ -140,10 +141,10 @@
               </svg>
               <span class="flex absolute -mt-5 ml-4">
                 <span
-                  class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"
+                  class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-[var(--primary)] opacity-75"
                 ></span>
                 <span
-                  class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"
+                  class="relative inline-flex rounded-full h-3 w-3 bg-[var(--accent)]"
                 >
                 </span>
               </span>
@@ -168,12 +169,12 @@
             </div>
             <div
               id="dropdownMenu"
-              class="hidden absolute top-full right-0 mt-2 bg-[var(--secondary)] text-[var(--text)] rounded-lg shadow-lg"
+              class="hidden font-['Snippet'] absolute top-full items-left font-semibold right-0 mt-2 bg-[var(--secondary)] text-[var(--text)] rounded-lg shadow-lg"
             >
-              <a href="index.html" class="block px-4 py-2">Home</a>
-              <a href="products.html" class="block px-4 py-2">Products</a>
-              <a href="#" class="block px-4 py-2">Roms</a>
-              <a href="#" class="block px-4 py-2">Mods</a>
+              <a href="index.html" class="block px-4 py-2"><i class="fa-solid fa-house mr-2"></i>Home</a>
+              <a href="products.html" class="block px-4 py-2"><i class="fa-solid fa-shirt mr-2"></i>Products</a>
+              <a href="#" class="block px-4 py-2"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Collection</a>
+              <a href="login.html" class="block px-4 py-2"><i class="fa-solid fa-user mr-3"></i>Account</a>
             </div>
           </nav>
         </section>
@@ -197,9 +198,7 @@
       
 
     <!-- Featured Products Section -->
-    <section
-      class="container mx-auto min-w-full rounded-lg bg-[var(--secondary)] mb-2 mt-0"
-    >
+    <section class="container mx-auto min-w-full rounded-lg bg-[var(--secondary)] mb-2 mt-0">
       <h2 class="text-3xl font-semibold mb-4 text-gray-100 text-center pt-3">
         Featured Products
       </h2>
@@ -405,6 +404,8 @@
         </swiper-slide>
       </swiper-container>
     </section>
+
+    <!-- Footer Section -->
     <footer class="relative bg-gray-200 pt-8 pb-6 mt-2 rounded-lg">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap text-left lg:text-left">
@@ -545,5 +546,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="main.js"></script>
+
   </body>
 </html>

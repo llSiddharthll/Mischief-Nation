@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Snippet&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Snippet&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mischief Nation - Fashion</title>
+  </head>
+  <style>
+    input::placeholder {
+      color: var(--text) !important;
+      font-size: small;
+      font-weight: 300;
+      font-family: system-ui;
+    }
+  </style>
+  <body class="bg-[var(--background)]">
+    <!-- Navigation -->
+    <section class="container mx-1 md:mx-0 min-w-full sticky top-2 pb-0 z-40">
+      <div class="flex flex-wrap place-items-center">
+        <section class="relative mx-auto">
+          <!-- navbar -->
+          <nav
+            class="flex justify-between bg-[var(--secondary)] text-[var(--text)] w-[95vw] md:w-[98vw] rounded-lg"
+          >
+            <div class="px-4 xl:px-12 py-2 flex w-full items-center">
+              <a
+                class="flex items-center text-3xl font-semibold font-['Gluten'] font-heading"
+                href="index.html"
+              >
+                <img class="h-20" src="images/logo.png" alt="logo" />
+                <span class="hidden md:block">Mischief Nation</span>
+              </a>
+              <!-- Nav Links -->
+              <ul
+                class="hidden md:flex px-4 mx-auto font-semibold font-['Snippet'] font-heading space-x-12"
+              >
+                <li>
+                  <a class="hover:text-[var(--background)]" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[var(--background)]" href="products.html"
+                    >Products</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[var(--background)]" href="#"
+                    >Collections</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[var(--background)]" href="#"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+              <!-- Header Icons -->
+              <div class="hidden xl:flex items-center space-x-5 items-center">
+                <!-- Sign In / Register-->
+                <a
+                  class="flex items-center hover:text-[var(--background)]"
+                  href="login.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 hover:text-[var(--background)]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Responsive navbar -->
+
+            <div id="menuBtn" class="self-center mr-5 xl:hidden">
+              <div class="text-[var(--text)] focus:outline-none">
+                <svg
+                  class="h-8 w-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="dropdownMenu"
+              class="hidden font-['Snippet'] absolute top-full text-justify font-semibold right-0 mt-2 bg-[var(--secondary)] text-[var(--text)] rounded-lg shadow-lg"
+            >
+              <a href="index.html" class="block px-4 py-2"
+                ><i class="fa-solid fa-house mr-2"></i>Home</a
+              >
+              <a href="products.html" class="block px-4 py-2"
+                ><i class="fa-solid fa-shirt mr-2"></i>Products</a
+              >
+              <a href="#" class="block px-4 py-2"
+                ><i class="fa-solid fa-wand-magic-sparkles mr-2"></i
+                >Collection</a
+              >
+              <a href="login.html" class="block px-4 py-2"
+                ><i class="fa-solid fa-user mr-3"></i>Account</a
+              >
+            </div>
+          </nav>
+        </section>
+      </div>
+    </section>
+
+    <section
+      class="container mx-4 justify-center flex p-2 pb-6 pt-[30%] rounded-lg md:pt-8 max-w-[94vw] md:max-w-[98vw] h-[88dvh] md:h-full mt-4 bg-gradient-to-r from-cyan-300 to-blue-300"
+    >
+      <div
+        class="max-w-md w-full bg-white/30 rounded-lg shadow-md p-8"
+        style="backdrop-filter: blur(15px)"
+      >
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">
+          Mischief Nation
+        </h2>
+        <form class="space-y-6 font-['Snippet']" action="#" method="POST">
+          <div>
+            <label class="text-sm font-bold text-gray-600 block">Email</label>
+            <input
+              type="email"
+              class="w-full p-2 border border-gray-300 rounded mt-1"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div>
+            <label class="text-sm font-bold text-gray-600 block"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="w-full p-2 border border-gray-300 rounded mt-1"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+              />
+              <label for="remember" class="ml-2 block text-sm text-gray-900"
+                >Remember me</label
+              >
+            </div>
+            <div>
+              <a
+                href="#"
+                class="font-medium text-sm text-[var(--accent)] hover:text-indigo-500"
+                >Forgot your password?</a
+              >
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-[var(--primary)] text-[var(--text)] p-3 rounded-lg font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+          >
+            Sign in
+          </button>
+        </form>
+        <p class="mt-6 text-sm text-center text-gray-400">
+          Don't have an account?
+          <a
+            href="signup.html"
+            class="text-[var(--accent)] hover:text-indigo-500 font-medium"
+            >Sign up</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

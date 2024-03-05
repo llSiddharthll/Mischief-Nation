@@ -11,7 +11,7 @@ function renderProduct(product) {
     "p-4",
     "transition",
     "duration-300",
-    "bg-gray-200",
+    "bg-[var(--secondary)]",
     "rounded-lg"
   );
 
@@ -31,7 +31,7 @@ function renderProduct(product) {
 
   // Product Details
   const productTitle = document.createElement("h3");
-  productTitle.classList.add("text-md", "mb-2", "line-clamp-2");
+  productTitle.classList.add("text-md", "mb-2", "line-clamp-1");
   productTitle.textContent = product.title;
   productCard.appendChild(productTitle);
 

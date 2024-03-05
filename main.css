@@ -6,6 +6,11 @@
   --accent: #62a0e5;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 html {
   scroll-behavior: smooth;
 }
