@@ -12,7 +12,9 @@ function renderProduct(product) {
     "transition",
     "duration-300",
     "bg-[var(--secondary)]",
-    "rounded-lg"
+    "rounded-lg",
+    "text-sm",
+    "md:text-md"
   );
 
   // Product Image
@@ -21,11 +23,12 @@ function renderProduct(product) {
   productImage.alt = product.title;
   productImage.classList.add(
     "bg-white",
-    "w-full",
-    "h-80",
+    "h-40",
     "object-contain",
     "mb-4",
-    "rounded-lg"
+    "rounded-lg",
+    "md:h-80",
+    "w-full"
   );
   productCard.appendChild(productImage);
 
